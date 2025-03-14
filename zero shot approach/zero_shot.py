@@ -48,9 +48,6 @@ def zero_shot_fcr_prediction(query_paper, selected_features, model_name="llama3"
 
     # Initialize LLM dynamically based on the model name
     llm = Ollama(model=model_name)
-    print("\n--------------------------\n")
-    print(prompt)
-    print("\n--------------------------\n")
     
     for _ in range(NUM_SAMPLES):
         response = llm.invoke(prompt)
