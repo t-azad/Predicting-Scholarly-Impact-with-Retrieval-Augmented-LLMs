@@ -7,20 +7,21 @@ This approach provides an **alternative to citation-based metrics** by leveragin
 
 ---
 
-
 Create a virtual environment: (Step 1):
+
 mkdir my_project
 
 cd my_project
+
 Activate the virtual environment (Step 2):
 
 env\Scripts\activate (windows)
 
 source env/bin/activate
+
 install related libraries (Step 3):
 
 pip install -r requirements.txt
-code workflow (how to run)
 
 Code Workflow & How to Run (Step 4):
 📂 Dataset Preparation
