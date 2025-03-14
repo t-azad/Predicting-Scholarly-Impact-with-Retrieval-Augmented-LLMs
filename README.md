@@ -7,6 +7,50 @@ This approach provides an **alternative to citation-based metrics** by leveragin
 
 ---
 
+
+Create a virtual environment: (Step 1):
+mkdir my_project
+
+cd my_project
+Activate the virtual environment (Step 2):
+
+env\Scripts\activate (windows)
+
+source env/bin/activate
+install related libraries (Step 3):
+
+pip install -r requirements.txt
+code workflow (how to run)
+
+Code Workflow & How to Run (Step 4):
+📂 Dataset Preparation
+
+    Load the dataset from data/ (e.g., df_scholarly_impact.csv).
+    Preprocess the dataset using dataset_creation.ipynb, which:
+        Cleans text data
+        Extracts title, abstract, and readability features
+        Normalizes Field Citation Ratio (FCR) scores
+
+📂 Running Prediction Models
+
+    Zero-Shot Baseline Prediction:
+    Run zero_shot.py to predict FCR using LLM-only prompting (without retrieval).
+
+Retrieval-Augmented Prediction (RAG):
+Run dense retrieval-based predictions using LLMs with FAISS:
+
+    Gemma: python gemma.py
+    Llama 3: python llama3.py
+    Mistral: python mistral.py
+
+Evaluating Model Performance:
+
+    MAE, RMSE, and NDCG scores are automatically calculated after running the model.
+    Results are saved in results/ as CSV files.
+
+
+
+
 ## Code and Datasets
 
 ```bash
@@ -37,19 +81,4 @@ scholarly-impact-rag/
 ├── requirements.txt           # List of dependencies
 ├── README.md                  # Project documentation
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'''
