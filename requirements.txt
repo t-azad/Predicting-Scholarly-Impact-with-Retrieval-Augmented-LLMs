@@ -1,0 +1,54 @@
+# Core Libraries
+numpy==1.24.3
+pandas==1.5.3
+scikit-learn==1.2.2
+scipy==1.10.1
+!pip install numpy pandas scikit-learn scipy
+
+# LLM and LangChain Components
+langchain==0.1.6
+langchain-community==0.1.6
+langchain.schema==0.1.3
+ollama==0.1.4  # Local LLM Hosting
+HuggingFaceEmbeddings==0.4.0  # Embeddings for LangChain
+!pip install langchain langchain-community ollama sentence-transformers faiss-cpu
+
+# FAISS for Dense Retrieval
+faiss-cpu==1.7.4  # CPU version (use faiss-gpu if needed)
+
+# Sentence Transformers (Embeddings)
+sentence-transformers==2.2.2
+
+# Text Processing & NLP
+textstat==0.7.3  # Readability scores
+nltk==3.8.1  # Natural Language Toolkit
+!pip install nltk textstat
+
+# Data Visualization
+matplotlib==3.7.1
+seaborn==0.12.2
+bokeh==3.1.1  # Interactive visualizations
+!pip install matplotlib seaborn bokeh
+
+# Concurrent Processing
+concurrent-log-handler==0.9.25
+!pip install concurrent-log-handler
+
+
+# Core Libraries
+!pip install numpy pandas scikit-learn scipy
+
+# LLM and LangChain Components
+!pip install langchain langchain-community ollama sentence-transformers faiss-cpu
+
+# NLP & Text Processing
+!pip install nltk textstat
+
+# Data Visualization
+!pip install matplotlib seaborn bokeh
+
+# Concurrent Processing
+!pip install concurrent-log-handler
+
+
+
