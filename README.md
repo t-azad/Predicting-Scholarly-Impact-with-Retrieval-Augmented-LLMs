@@ -13,21 +13,21 @@ This approach provides an **alternative to citation-based metrics** by leveragin
 
 scholarly-impact-rag/
 │
-├── data/                     # Datasets for training & evaluation
+├── dataset/                     # Datasets for training & evaluation
 │   ├── df_scholarly_impact.csv  # Main dataset (FCR-labeled research papers)
-│
+│   ├── dataset_creation.ipynb  # Dataset preprocessing notebook
+
 ├── src/                      # Core implementation scripts
-│   ├── zero_shot.py           # Zero-shot LLM prediction script
-│   ├── gemma.py               # Gemma-based retrieval-augmented prediction
-│   ├── llama3.py              # Llama 3-based retrieval-augmented prediction
-│   ├── mistral.py             # Mistral-based retrieval-augmented prediction
+│   ├── zero_shot.py           # Zero-shot LLM prediction module
+│   ├── gemma.py               # Gemma-7b rag module
+│   ├── llama3.py              # Llama 3-8b rag module
+│   ├── mistral.py             # Mistral rag module
 │
 ├── notebooks/                 # Jupyter Notebooks for Analysis
-│   ├── dataset_creation.ipynb  # Dataset preprocessing
-│   ├── zero_shot.ipynb         # Zero-shot prompting analysis
-│   ├── gemma.ipynb             # Gemma model evaluation
-│   ├── llama3.ipynb            # Llama 3 model evaluation
-│   ├── mistral.ipynb           # Mistral model evaluation
+│   ├── zero_shot.ipynb         # Zero-shot prompting notbook
+│   ├── gemma.ipynb             # Gemma-7b model notbook
+│   ├── llama3.ipynb            # Llama 3-8b model notbook
+│   ├── mistral.ipynb           # Mistral model notbook
 │
 ├── results/                   # Model performance results
 │   ├── predictions_gemma.csv
