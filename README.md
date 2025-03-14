@@ -9,10 +9,7 @@ This approach provides an **alternative to citation-based metrics** by leveragin
 
 ## Setup Instructions
 
-### Create a Virtual Environment
-To avoid dependency conflicts, create and activate a virtual environment:
-
-
+```bash
 
 ## Code and Datasets
 scholarly-impact-rag/
