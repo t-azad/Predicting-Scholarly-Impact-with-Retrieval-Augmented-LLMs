@@ -12,14 +12,6 @@ This approach provides an **alternative to citation-based metrics** by leveragin
 ### Create a Virtual Environment
 To avoid dependency conflicts, create and activate a virtual environment:
 
-#### **On Windows:**
-```bash
-mkdir scholarly-impact
-cd scholarly-impact
-python -m venv env
-env\Scripts\activate
-
-
 
 
 ## Code and Datasets
