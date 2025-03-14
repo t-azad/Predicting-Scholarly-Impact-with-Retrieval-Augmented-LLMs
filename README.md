@@ -7,11 +7,10 @@ This approach provides an **alternative to citation-based metrics** by leveragin
 
 ---
 
-## Setup Instructions
+## Code and Datasets
 
 ```bash
 
-## Code and Datasets
 scholarly-impact-rag/
 │
 ├── data/                     # Datasets for training & evaluation
