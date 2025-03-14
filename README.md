@@ -1,1 +1,1 @@
-# Predicting-Scholarly-Impact-with-Retrieval-Augmented-LLMs
+# Predicting Scholarly Impact with Retrieval-Augmented LLMs
