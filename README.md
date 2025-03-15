@@ -13,43 +13,34 @@ mkdir my_project
 
 cd my_project
 
-Activate the virtual environment (Step 2):
-
-env\Scripts\activate (windows)
-
-source env/bin/activate
-
-install related libraries (Step 3):
+install related libraries (Step 2):
 
 pip install -r requirements.txt
 
-Code Workflow & How to Run (Step 4):
+Code Workflow & How to Run (Step 3):
 📂 Dataset Preparation
 
     Download the file (research_papers.csv) from HuggingFace and save it in a folder called /dataset.
-    The file has already been preprocessed with the following steps:
-        Cleans text data
-        Extracts title, abstract, and readability features
-        Normalizes Field Citation Ratio (FCR) scores
+    The file has already been preprocessed and contains the necessary metadata for all research papers
 
 📂 Running Prediction Models
 
     Zero-Shot Baseline Prediction:
-    Run zero_shot.py to predict FCR using LLM-only prompting (without retrieval).
+    Run zero_shot.ipynb to predict FCR using LLM-only prompting (without retrieval).
 
-Retrieval-Augmented Prediction (RAG):
-Run dense retrieval-based predictions using LLMs with FAISS:
+    Using Retrieval-Augmented Prediction (RAG) with LLMs:
 
-    Gemma: python gemma.py
-    Llama 3: python llama3.py
-    Mistral: python mistral.py
-
-Evaluating Model Performance:
-
-    MAE, RMSE, and NDCG scores are automatically calculated after running the model.
-    Results are saved in results/ as CSV files.
+    Run each notebook: 
+    Gemma: gemma.ipynb
+    Llama 3: llama3.ipynb
+    Mistral: mistral.ipynb
 
 
+📂 Evaluating Model Performance:
+
+    MAE, RMSE, and NDCG scores are automatically calculated after the model makes all predictions.
+    Individual predictions for each model are stored in "results/predictions"
+    Metrics for each approach (Zero-shot vs RAG) is stored in "results/metrics"
 
 
 ## Code and Datasets
@@ -58,10 +49,9 @@ Evaluating Model Performance:
 
 scholarly-impact-rag/
 │
-├── dataset/                     # Datasets for training & evaluation
-│   ├── df_scholarly_impact.csv  # Main dataset (FCR-labeled research papers)
-│   ├── dataset_creation.ipynb  # Dataset preprocessing notebook
-
+├── dataset/                            # Datasets for training & evaluation
+│   ├── research_papers.csv             # dataset containing research papers metadata
+│
 ├── src/                                # Core implementation scripts
 │   ├── zero_shot
 │         ├── zero_shot.py              # Zero-shot LLM prediction module 
@@ -77,7 +67,7 @@ scholarly-impact-rag/
 │        ├── mistral.ipynb              # Mistral model notebook
 │
 │
-├── results/                   # Model performance results
+├── results/                            # Model performance results
 │   ├── gemma
 │        ├── gemma rag predictions.csv                 
 │        ├── gemma zero-shot predictions.csv
