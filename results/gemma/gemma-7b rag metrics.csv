@@ -1,3 +1,0 @@
-Model,Feature_Set,k,MAE,NDCG,MSE,RMSE,r2
-gemma,"['Title', 'Abstract', 'Flesch Reading Ease', 'Gunning Fog Index']",5,0.217,0.941,0.084,0.29,-0.102
-gemma,"['Title', 'Abstract']",5,0.237,0.94,0.093,0.305,-0.226
