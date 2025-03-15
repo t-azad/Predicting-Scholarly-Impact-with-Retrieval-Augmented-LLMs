@@ -26,8 +26,8 @@ pip install -r requirements.txt
 Code Workflow & How to Run (Step 4):
 📂 Dataset Preparation
 
-    Load the dataset from data/ (e.g., df_scholarly_impact.csv).
-    Preprocess the dataset using dataset_creation.ipynb, which:
+    Download the file (research_papers.csv) from HuggingFace and save it in a folder called /dataset.
+    The file has already been preprocessed with the following steps:
         Cleans text data
         Extracts title, abstract, and readability features
         Normalizes Field Citation Ratio (FCR) scores
@@ -62,19 +62,19 @@ scholarly-impact-rag/
 │   ├── df_scholarly_impact.csv  # Main dataset (FCR-labeled research papers)
 │   ├── dataset_creation.ipynb  # Dataset preprocessing notebook
 
-├── src/                      # Core implementation scripts
+├── src/                                # Core implementation scripts
 │   ├── zero_shot
 │         ├── zero_shot.py              # Zero-shot LLM prediction module 
 │         ├── zero_shot.ipynb           # Zero-shot prompting notebook
 │   ├── gemma
-│        ├── gemma.py                  # Gemma-7b rag module
-│        ├── gemma.ipynb               # Gemma-7b model notebook
+│        ├── gemma.py                   # Gemma-7b rag module
+│        ├── gemma.ipynb                # Gemma-7b model notebook
 │   ├── llama3
 │        ├── llama3.py                  # Llama 3-8b rag module
 │        ├── llama3.ipynb               # Llama 3-8b model notebook
 │   ├── mistral
-│        ├── mistral.py                  # Mistral rag module
-│        ├── mistral.ipynb               # Mistral model notebook
+│        ├── mistral.py                 # Mistral rag module
+│        ├── mistral.ipynb              # Mistral model notebook
 │
 │
 ├── results/                   # Model performance results
