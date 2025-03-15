@@ -65,16 +65,17 @@ scholarly-impact-rag/
 ├── src/                      # Core implementation scripts
 │   ├── zero_shot
 │         ├── zero_shot.py              # Zero-shot LLM prediction module 
-│          ├── zero_shot.ipynb           # Zero-shot prompting notebook
-│   ├── gemma.py               # Gemma-7b rag module
-│   ├── llama3.py              # Llama 3-8b rag module
-│   ├── mistral.py             # Mistral rag module
+│         ├── zero_shot.ipynb           # Zero-shot prompting notebook
+│   ├── gemma
+│        ├── gemma.py                  # Gemma-7b rag module
+│        ├── gemma.ipynb               # Gemma-7b model notebook
+│   ├── llama3
+│        ├── llama3.py                  # Llama 3-8b rag module
+│        ├── llama3.ipynb               # Llama 3-8b model notebook
+│   ├── mistral
+│        ├── mistral.py                  # Mistral rag module
+│        ├── mistral.ipynb               # Mistral model notebook
 │
-├── notebooks/                 # Jupyter Notebooks for Analysis
-│   ├── zero_shot.ipynb         # Zero-shot prompting notebook
-│   ├── gemma.ipynb             # Gemma-7b model notebook
-│   ├── llama3.ipynb            # Llama 3-8b model notebook
-│   ├── mistral.ipynb           # Mistral model notebook
 │
 ├── results/                   # Model performance results
 │   ├── predictions_gemma.csv
