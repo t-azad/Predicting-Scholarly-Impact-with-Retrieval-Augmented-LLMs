@@ -78,9 +78,21 @@ scholarly-impact-rag/
 │
 │
 ├── results/                   # Model performance results
-│   ├── predictions_gemma.csv
-│   ├── predictions_llama3.csv
-│   ├── predictions_mistral.csv
+│   ├── gemma
+│        ├── gemma rag predictions.csv                 
+│        ├── gemma zero-shot predictions.csv
+│   ├── llama3
+│        ├── llama3 rag predictions.csv                 
+│        ├── llama3 zero-shot predictions.csv
+│   ├── mistral
+│        ├── mistral rag predictions.csv                 
+│        ├── mistral zero-shot predictions.csv
+│   ├── metrics
+│        ├── zero-shot metrics.csv                 
+│        ├── gemma rag metrics.csv
+│        ├── llama3 rag metrics.csv
+│        ├── mistral rag metrics.csv
+│ 
 │
 ├── requirements.txt           # List of dependencies
 ├── README.md                  # Project documentation
