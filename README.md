@@ -58,26 +58,26 @@ Evaluating Model Performance:
 
 scholarly_impact_project/
 │
-├── dataset/                     # Datasets for training & evaluation
-│   ├── research_papers.csv  # Main dataset (FCR-labeled research papers)
-│   ├── dataset_creation.ipynb  # Dataset preprocessing notebook
+├── dataset/                                # Datasets for training & evaluation
+│   ├── research_papers.csv                 # Main dataset (FCR-labeled research papers)
+│   ├── dataset_creation.ipynb              # Dataset preprocessing notebook
 │ 
-├── src/                      # Core implementation scripts
+├── src/                                    # Folder containing code implementation
 │   ├── zero_shot
-│         ├── zero_shot.py              # Zero-shot LLM prediction module 
-│         ├── zero_shot.ipynb           # Zero-shot prompting notebook
+│         ├── zero_shot.py                  # Zero-shot LLM prediction module 
+│         ├── zero_shot.ipynb               # Zero-shot prompting notebook
 │   ├── gemma
-│        ├── gemma.py                  # Gemma-7b rag module
-│        ├── gemma.ipynb               # Gemma-7b model notebook
+│        ├── gemma.py                       # Gemma-7b rag module
+│        ├── gemma.ipynb                    # Gemma-7b model notebook
 │   ├── llama3
-│        ├── llama3.py                  # Llama 3-8b rag module
-│        ├── llama3.ipynb               # Llama 3-8b model notebook
+│        ├── llama3.py                      # Llama 3-8b rag module
+│        ├── llama3.ipynb                   # Llama 3-8b model notebook
 │   ├── mistral
-│        ├── mistral.py                  # Mistral rag module
-│        ├── mistral.ipynb               # Mistral model notebook
+│        ├── mistral.py                     # Mistral rag module
+│        ├── mistral.ipynb                  # Mistral model notebook
 │
 │
-├── results/                   # Model performance results
+├── results/                                # Model performance results
 │   ├── gemma
 │        ├── gemma rag predictions.csv                 
 │        ├── gemma zero-shot predictions.csv
@@ -94,7 +94,7 @@ scholarly_impact_project/
 │        ├── mistral rag metrics.csv
 │ 
 │
-├── requirements.txt           # List of dependencies
-├── README.md                  # Project documentation
+├── requirements.txt                   # List of dependencies
+├── README.md                          # Project documentation
 
 '''
