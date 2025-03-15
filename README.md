@@ -59,7 +59,7 @@ Evaluating Model Performance:
 scholarly-impact-rag/
 │
 ├── dataset/                     # Datasets for training & evaluation
-│   ├── df_scholarly_impact.csv  # Main dataset (FCR-labeled research papers)
+│   ├── research_papers.csv  # Main dataset (FCR-labeled research papers)
 │   ├── dataset_creation.ipynb  # Dataset preprocessing notebook
 
 ├── src/                      # Core implementation scripts
