@@ -1,9 +1,10 @@
 # Predicting Scholarly Impact with Retrieval-Augmented LLMs
 
 ## Description:
-This repository contains code for predicting the impact of research papers using Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG). We use FAISS-based dense retrieval, self-consistency prompting, and models like Llama 3, Mistral, and Gemma to enhance the prediction accuracy of Field Citation Ratios (FCR).
+This research investigates how Retrieval-Augmented Generation (RAG) combined with Large Language Models (LLMs) can enhance scholarly impact prediction. This study uses the text-based analysis of papers and dense retrieval method for LLM to predict a paper’s **Field Citation Ratio (FCR)**, a normalized citation metric that accounts for variations across disciplines.  
 
-This approach provides an alternative to citation-based metrics by leveraging text-based analysis of papers, improving impact assessment before citations accumulate.
+The study implements a **two-major experimental framework**: (1) **Zero-shot prompting** using LLMs (**Llama 3, Mistral, and Gemma**) to establish a baseline, (2) Retrieval-augmented prediction, where the model retrieves relevant academic papers from a **FAISS-based dense vector store** before generating impact predictions. Also, we include self-consistency with a rag, where the model makes multiple predictions per test paper and selects the median value. Papers are represented using **SciBERT embeddings**, and a **FAISS-based retrieval index** enhances contextual understanding.  
+
 
 ---
 
