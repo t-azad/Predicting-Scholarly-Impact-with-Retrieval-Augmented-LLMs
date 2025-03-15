@@ -64,8 +64,8 @@ scholarly-impact-rag/
 
 ├── src/                      # Core implementation scripts
 │   ├── zero_shot
-|          ├── zero_shot.py              # Zero-shot LLM prediction module 
-|          ├── zero_shot.ipynb           # Zero-shot prompting notebook
+│         ├── zero_shot.py              # Zero-shot LLM prediction module 
+│          ├── zero_shot.ipynb           # Zero-shot prompting notebook
 │   ├── gemma.py               # Gemma-7b rag module
 │   ├── llama3.py              # Llama 3-8b rag module
 │   ├── mistral.py             # Mistral rag module
