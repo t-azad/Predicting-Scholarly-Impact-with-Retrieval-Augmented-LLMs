@@ -1,0 +1,7 @@
+Model,Feature Set,Approach,MAE,NDCG
+LLama3-8b,"Title, Abstract",Zero-Shot,0.227,0.929
+LLama3-8b,"Title, Abstract, Flesch Reading Ease, Gunning Fog Index",Zero-Shot,0.222,0.936
+Mistral-7b,"Title, Abstract",Zero-Shot,0.317,0.923
+Mistral-7b,"Title, Abstract, Flesch Reading Ease, Gunning Fog Index",Zero-Shot,0.291,0.917
+Gemma-7b,"Title, Abstract",Zero-Shot,0.314,0.91
+Gemma-7b,"Title, Abstract, Flesch Reading Ease, Gunning Fog Index",Zero-Shot,0.304,0.923
