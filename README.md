@@ -8,7 +8,7 @@ The study implements a **two-major experimental framework**: (1) **Zero-shot pro
 
 ---
 
-Create a virtual environment: (Step 1):
+Create a project directory: (Step 1):
 
 mkdir impact-prediction-rag
 
