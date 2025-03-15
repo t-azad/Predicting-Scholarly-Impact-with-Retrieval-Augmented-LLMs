@@ -9,9 +9,9 @@ This approach provides an **alternative to citation-based metrics** by leveragin
 
 Create a virtual environment: (Step 1):
 
-mkdir my_project
+mkdir scholarly_impact_project
 
-cd my_project
+cd scholarly_impact_project
 
 Activate the virtual environment (Step 2):
 
@@ -56,12 +56,12 @@ Evaluating Model Performance:
 
 ```bash
 
-scholarly-impact-rag/
+scholarly_impact_project/
 │
 ├── dataset/                     # Datasets for training & evaluation
 │   ├── research_papers.csv  # Main dataset (FCR-labeled research papers)
 │   ├── dataset_creation.ipynb  # Dataset preprocessing notebook
-
+│ 
 ├── src/                      # Core implementation scripts
 │   ├── zero_shot
 │         ├── zero_shot.py              # Zero-shot LLM prediction module 
