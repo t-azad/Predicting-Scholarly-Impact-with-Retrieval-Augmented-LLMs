@@ -1,17 +1,17 @@
 # Predicting Scholarly Impact with Retrieval-Augmented LLMs
 
 ## Description:
-This repository contains code for predicting the **scholarly impact of research papers** using **Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG).** It utilizes **FAISS-based dense retrieval**, **self-consistency prompting**, and models like **Llama 3, Mistral, and Gemma** to enhance the prediction accuracy of **Field Citation Ratios (FCR).**
+This repository contains code for predicting the impact of research papers using Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG). We use FAISS-based dense retrieval, self-consistency prompting, and models like Llama 3, Mistral, and Gemma to enhance the prediction accuracy of Field Citation Ratios (FCR).
 
-This approach provides an **alternative to citation-based metrics** by leveraging **text-based analysis** of papers, improving impact assessment **before citations accumulate.**
+This approach provides an alternative to citation-based metrics by leveraging text-based analysis of papers, improving impact assessment before citations accumulate.
 
 ---
 
 Create a virtual environment: (Step 1):
 
-mkdir scholarly_impact_project
+mkdir my_project
 
-cd scholarly_impact_project
+cd my_project
 
 Activate the virtual environment (Step 2):
 
@@ -56,28 +56,28 @@ Evaluating Model Performance:
 
 ```bash
 
-scholarly_impact_project/
+scholarly-impact-rag/
 │
-├── dataset/                                # Datasets for training & evaluation
-│   ├── research_papers.csv                 # Main dataset (FCR-labeled research papers)
-│   ├── dataset_creation.ipynb              # Dataset preprocessing notebook
-│ 
-├── src/                                    # Folder containing code implementation
+├── dataset/                     # Datasets for training & evaluation
+│   ├── df_scholarly_impact.csv  # Main dataset (FCR-labeled research papers)
+│   ├── dataset_creation.ipynb  # Dataset preprocessing notebook
+
+├── src/                      # Core implementation scripts
 │   ├── zero_shot
-│         ├── zero_shot.py                  # Zero-shot LLM prediction module 
-│         ├── zero_shot.ipynb               # Zero-shot prompting notebook
+│         ├── zero_shot.py              # Zero-shot LLM prediction module 
+│         ├── zero_shot.ipynb           # Zero-shot prompting notebook
 │   ├── gemma
-│        ├── gemma.py                       # Gemma-7b rag module
-│        ├── gemma.ipynb                    # Gemma-7b model notebook
+│        ├── gemma.py                  # Gemma-7b rag module
+│        ├── gemma.ipynb               # Gemma-7b model notebook
 │   ├── llama3
-│        ├── llama3.py                      # Llama 3-8b rag module
-│        ├── llama3.ipynb                   # Llama 3-8b model notebook
+│        ├── llama3.py                  # Llama 3-8b rag module
+│        ├── llama3.ipynb               # Llama 3-8b model notebook
 │   ├── mistral
-│        ├── mistral.py                     # Mistral rag module
-│        ├── mistral.ipynb                  # Mistral model notebook
+│        ├── mistral.py                  # Mistral rag module
+│        ├── mistral.ipynb               # Mistral model notebook
 │
 │
-├── results/                                # Model performance results
+├── results/                   # Model performance results
 │   ├── gemma
 │        ├── gemma rag predictions.csv                 
 │        ├── gemma zero-shot predictions.csv
@@ -94,7 +94,7 @@ scholarly_impact_project/
 │        ├── mistral rag metrics.csv
 │ 
 │
-├── requirements.txt                   # List of dependencies
-├── README.md                          # Project documentation
+├── requirements.txt           # List of dependencies
+├── README.md                  # Project documentation
 
 '''
