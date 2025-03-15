@@ -9,9 +9,9 @@ This approach provides an alternative to citation-based metrics by leveraging te
 
 Create a virtual environment: (Step 1):
 
-mkdir my_project
+mkdir impact-prediction-rag
 
-cd my_project
+cd impact-prediction-rag
 
 install related libraries (Step 2):
 
@@ -47,7 +47,7 @@ Code Workflow & How to Run (Step 3):
 
 ```bash
 
-scholarly-impact-rag/
+impact-prediction-rag/
 │
 ├── dataset/                            # Datasets for training & evaluation
 │   ├── research_papers.csv             # dataset containing research papers metadata
@@ -68,13 +68,11 @@ scholarly-impact-rag/
 │
 │
 ├── results/                            # Model performance results
-│   ├── gemma
+│   ├── predictions
 │        ├── gemma rag predictions.csv                 
 │        ├── gemma zero-shot predictions.csv
-│   ├── llama3
 │        ├── llama3 rag predictions.csv                 
 │        ├── llama3 zero-shot predictions.csv
-│   ├── mistral
 │        ├── mistral rag predictions.csv                 
 │        ├── mistral zero-shot predictions.csv
 │   ├── metrics
