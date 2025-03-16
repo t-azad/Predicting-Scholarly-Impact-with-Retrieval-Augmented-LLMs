@@ -50,8 +50,8 @@ Code Workflow & How to Run (Step 3):
 
 impact-prediction-rag/
 │
-├── dataset/                            # Datasets for training & evaluation
-│   ├── research_papers.csv             # dataset containing research papers metadata
+├── dataset/                            
+│   ├── research_papers.csv             # csv file containing research paper metadata
 │
 ├── src/                                # Core implementation scripts
 │   ├── zero_shot
